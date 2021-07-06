@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.center {
+    width:100%;
+    margin:0 auto;
+    
+}
+header{
+    width:100%;
+    background-color: #5e3ea1;
+    padding: 30px 20px;
+    font-size:16px;
+}
+header > a{
+    color:#fff;
+    width:140px;
+    padding-left: 20px;
+    font-weight:bold;
+}
+nav.menu {
+    float:right;
+}
+nav.menu ul{
+    list-style-type:none;
+}
+nav.menu ul li{
+    display:inline;
+    padding:0 24px;
+}
+nav.menu ul li a {
+    text-decoration: none;
+    color:white;
+    cursor:pointer;
+}
+nav.menu ul li a:hover{
+    color:hsl(259, 40%, 66%);
+}
+@media only screen and (max-width: 768px ){
+    header > a {
+        display:none;
+    }
+    nav.menu{
+        float:none;
+        text-align:center;
+    }
+}
